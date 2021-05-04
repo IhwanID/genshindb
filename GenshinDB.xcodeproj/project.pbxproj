@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60578CC62641F85000FF03C2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60578CC52641F85000FF03C2 /* Character.swift */; };
 		60B9036A2641865800700678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B903692641865800700678 /* AppDelegate.swift */; };
 		60B9036C2641865800700678 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9036B2641865800700678 /* SceneDelegate.swift */; };
 		60B9036E2641865800700678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9036D2641865800700678 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2113A7DF5357CC39EF7EF66A /* Pods-GenshinDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenshinDB.release.xcconfig"; path = "Target Support Files/Pods-GenshinDB/Pods-GenshinDB.release.xcconfig"; sourceTree = "<group>"; };
+		60578CC52641F85000FF03C2 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		60B903662641865800700678 /* GenshinDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenshinDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B903692641865800700678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60B9036B2641865800700678 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60578CC42641F84300FF03C2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				60578CC52641F85000FF03C2 /* Character.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		60B9035D2641865700700678 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		60B903682641865800700678 /* GenshinDB */ = {
 			isa = PBXGroup;
 			children = (
+				60578CC42641F84300FF03C2 /* model */,
 				60B903692641865800700678 /* AppDelegate.swift */,
 				60B9036B2641865800700678 /* SceneDelegate.swift */,
 				60B9036D2641865800700678 /* ViewController.swift */,
@@ -210,6 +221,7 @@
 			files = (
 				60B9036E2641865800700678 /* ViewController.swift in Sources */,
 				60B9036A2641865800700678 /* AppDelegate.swift in Sources */,
+				60578CC62641F85000FF03C2 /* Character.swift in Sources */,
 				60B9037F2641869300700678 /* DataProvider.swift in Sources */,
 				60B9036C2641865800700678 /* SceneDelegate.swift in Sources */,
 			);
