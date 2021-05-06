@@ -48,6 +48,11 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailCharacter") as! DetailCharacterTableViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
 }
 
