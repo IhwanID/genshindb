@@ -1,7 +1,7 @@
 # Genshin DB iOS App
 
 ### Screenshots
-![home](Screenshot/home.png "Home Screen")
+![home](Screenshots/home.png "Home Screen")
 
 TODO:  
 - [  ] Create MVVM Pattern
