@@ -25,29 +25,30 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-Cv-fay">
-                                            <rect key="frame" x="40" y="23" width="338" height="49"/>
+                                            <rect key="frame" x="40" y="23" width="338" height="68"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aab-hh-L7t">
-                                            <rect key="frame" x="20" y="88" width="374" height="160"/>
+                                            <rect key="frame" x="0.0" y="99" width="414" height="160"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="160" id="DyR-KL-luj"/>
+                                                <constraint firstAttribute="width" secondItem="aab-hh-L7t" secondAttribute="height" multiplier="197:80" id="bBh-ip-Zny"/>
+                                                <constraint firstAttribute="height" constant="160" id="qFt-fM-tdk"/>
                                             </constraints>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="peK-Nh-Z7s">
-                                                <size key="itemSize" width="363" height="159"/>
+                                                <size key="itemSize" width="395" height="159"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="charcell" id="mxx-yi-xgl" customClass="CharacterViewCell" customModule="GenshinDB" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.5" width="363" height="159"/>
+                                                    <rect key="frame" x="20" y="0.5" width="395" height="159"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vt1-9s-SlE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="363" height="159"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="395" height="159"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1jP-Ue-MH7">
@@ -60,10 +61,10 @@
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstItem="1jP-Ue-MH7" firstAttribute="leading" secondItem="vt1-9s-SlE" secondAttribute="leading" id="47w-CF-SV7"/>
-                                                            <constraint firstItem="1jP-Ue-MH7" firstAttribute="top" secondItem="vt1-9s-SlE" secondAttribute="top" id="xPx-cz-fQ1"/>
+                                                            <constraint firstItem="1jP-Ue-MH7" firstAttribute="top" secondItem="vt1-9s-SlE" secondAttribute="top" id="zKl-Tu-s1N"/>
                                                         </constraints>
                                                     </collectionViewCellContentView>
-                                                    <size key="customSize" width="363" height="159"/>
+                                                    <size key="customSize" width="395" height="159"/>
                                                     <connections>
                                                         <outlet property="imageView" destination="1jP-Ue-MH7" id="2wc-FQ-l4o"/>
                                                     </connections>
@@ -72,13 +73,13 @@
                                         </collectionView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="aab-hh-L7t" firstAttribute="leading" secondItem="L0Z-7O-tzb" secondAttribute="leading" id="1KK-6x-9vB"/>
                                         <constraint firstItem="G6a-Cv-fay" firstAttribute="leading" secondItem="L0Z-7O-tzb" secondAttribute="leadingMargin" constant="20" id="6Qb-Y3-11d"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="G6a-Cv-fay" secondAttribute="trailing" constant="16" id="7wz-6b-WYs"/>
-                                        <constraint firstItem="aab-hh-L7t" firstAttribute="leading" secondItem="L0Z-7O-tzb" secondAttribute="leadingMargin" id="CRe-D2-WYQ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="aab-hh-L7t" secondAttribute="trailing" id="Fle-hI-2gl"/>
-                                        <constraint firstItem="aab-hh-L7t" firstAttribute="top" secondItem="G6a-Cv-fay" secondAttribute="bottom" constant="16" id="eMD-pN-Csj"/>
-                                        <constraint firstItem="aab-hh-L7t" firstAttribute="bottom" secondItem="L0Z-7O-tzb" secondAttribute="bottomMargin" id="j8g-B4-5za"/>
+                                        <constraint firstItem="aab-hh-L7t" firstAttribute="top" secondItem="G6a-Cv-fay" secondAttribute="bottom" constant="8" id="LrV-Cc-A6N"/>
+                                        <constraint firstAttribute="trailing" secondItem="aab-hh-L7t" secondAttribute="trailing" id="ag0-pN-Al5"/>
                                         <constraint firstItem="G6a-Cv-fay" firstAttribute="top" secondItem="L0Z-7O-tzb" secondAttribute="topMargin" constant="12" id="uJ6-1k-gDR"/>
+                                        <constraint firstAttribute="bottom" secondItem="aab-hh-L7t" secondAttribute="bottom" id="wK2-6j-Dyw"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
