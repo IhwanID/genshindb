@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60578CC62641F85000FF03C2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60578CC52641F85000FF03C2 /* Character.swift */; };
 		606016BC2644A57700122B8D /* DetailCharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606016BB2644A57700122B8D /* DetailCharacterTableViewController.swift */; };
+		608AA7F32645717D0009C42D /* CharacterDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 608AA7F22645717D0009C42D /* CharacterDetail.json */; };
 		60B9036A2641865800700678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B903692641865800700678 /* AppDelegate.swift */; };
 		60B9036C2641865800700678 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9036B2641865800700678 /* SceneDelegate.swift */; };
 		60B9036E2641865800700678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B9036D2641865800700678 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		2113A7DF5357CC39EF7EF66A /* Pods-GenshinDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenshinDB.release.xcconfig"; path = "Target Support Files/Pods-GenshinDB/Pods-GenshinDB.release.xcconfig"; sourceTree = "<group>"; };
 		60578CC52641F85000FF03C2 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		606016BB2644A57700122B8D /* DetailCharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterTableViewController.swift; sourceTree = "<group>"; };
+		608AA7F22645717D0009C42D /* CharacterDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterDetail.json; sourceTree = "<group>"; };
 		60B903662641865800700678 /* GenshinDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenshinDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B903692641865800700678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60B9036B2641865800700678 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,12 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60578CC42641F84300FF03C2 /* model */ = {
+		60578CC42641F84300FF03C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				60578CC52641F85000FF03C2 /* Character.swift */,
 			);
-			path = model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		608AA7F0264571590009C42D /* Stubbing */ = {
+			isa = PBXGroup;
+			children = (
+				608AA7F22645717D0009C42D /* CharacterDetail.json */,
+			);
+			path = Stubbing;
 			sourceTree = "<group>";
 		};
 		60B9035D2641865700700678 = {
@@ -77,7 +87,8 @@
 		60B903682641865800700678 /* GenshinDB */ = {
 			isa = PBXGroup;
 			children = (
-				60578CC42641F84300FF03C2 /* model */,
+				608AA7F0264571590009C42D /* Stubbing */,
+				60578CC42641F84300FF03C2 /* Model */,
 				60B903692641865800700678 /* AppDelegate.swift */,
 				60B9036B2641865800700678 /* SceneDelegate.swift */,
 				60B9036D2641865800700678 /* ViewController.swift */,
@@ -167,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608AA7F32645717D0009C42D /* CharacterDetail.json in Resources */,
 				60B903762641865900700678 /* LaunchScreen.storyboard in Resources */,
 				60B903732641865900700678 /* Assets.xcassets in Resources */,
 				60B903712641865800700678 /* Main.storyboard in Resources */,

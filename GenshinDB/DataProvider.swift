@@ -13,6 +13,7 @@ let genshinProvider = MoyaProvider<GenshinDB>(plugins: [NetworkLoggerPlugin(conf
 public enum GenshinDB {
     case artifacts
     case characters
+    case characterDetail(String)
     case consumables
     case domains
     case elements
@@ -32,6 +33,8 @@ extension GenshinDB: TargetType {
             return "/artifacts"
         case .characters:
             return "/characters"
+        case .characterDetail(let request):
+            return "/characters/\(request))"
         case .consumables:
             return "/consumables"
         case .domains:
